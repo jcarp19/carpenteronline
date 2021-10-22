@@ -132,9 +132,11 @@ header {
         justify-content: center;
         align-items: flex-start;
         gap: 1em;
+        flex-wrap: wrap;
     }
     .box {
         max-width: 30%;
-        /* margin-left: 2em; */
+        min-height: 600px;
     }
+    
 }
