@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim Carpenter - JavaScript Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1><span class="logo-first">J<span class="underline">im</span></span><span class="logo-last underline">Carpenter</span></h1>
+            <p class="title">JavaScript Developer</p>
+        </header>
+        <div class="box-container">
+            <section class="box" onclick="openProject('budgie')">
+                <h2 class="box_headline">Budgie Budget</h2>
+                <div class="project_screenshot budgie"></div>
+                <p class="box_copy">Team project: Simple budget app that tracks your spends.</p>
+                <a class="box_link" href="/budgie/">View Project</a>
+            </section>
+            <section class="box" onclick="openProject('color_bg')">
+                <h2 class="box_headline">Color Background</h2>
+                <div class="project_screenshot color_bg"></div>
+                <p class="box_copy">Click the button to change the color of the background.</p>
+                <a class="box_link" href="/color_bg/">View Project</a>
+            </section>
+            <section class="box" onclick="openProject('bg_gradient')">
+                <h2 class="box_headline">Background Gradient</h2>
+                <div class="project_screenshot gradient_bg"></div>
+                <p class="box_copy">Click the button to generate a new HEX background color.</p>
+                <a class="box_link" href="/bg_gradient/">View Project</a>
+            </section>
+            <section class="box" onclick="openProject('random_quote')">
+                <h2 class="box_headline">Quote Generator</h2>
+                <div class="project_screenshot quote_bg"></div>
+                <p class="box_copy">Click the button to generate a random quote.</p>
+                <a class="box_link" href="/random_quote/">View Project</a>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
