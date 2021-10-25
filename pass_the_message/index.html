@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pass The Message</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div id="wrapper">
+    <div class="container">
         <div class="message-container">
             <h1 class="message-container__headline">Type your message below</h1>
-            <form>
-                <input type="text" name="message" id="message" placeholder="Message" required>
-            </form>
+            <div class="form__group">
+                <input class="form__field" type="text" name="message" id="message" placeholder="Message" required>
+                <label class="form__label" for="message">Message</label>
+            </div>
             <button id="button">Make It So!</button>
             <div>
                 <p class="new-message"></p>
@@ -23,13 +24,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-<div class="quote-container">
-    <h1 class="quote-container__headline">Random Quote Generator</h1>
-    <div class="quote-detail">
-        <p class="quote-detail__quote">Life's a tough proposition, and the first hundred years are the hardest.</p>
-        <p class="quote-detail__author">Wilson Mizner</p>
-    </div>
-    <button onclick="getQuote()">Get a New Quote</button>
-</div>
