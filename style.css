@@ -140,6 +140,25 @@ button:hover {
     color: #ffffff;
     border-radius: 50px;
 }
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    border: 1px solid #222222;
+}
+.container__headline {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+.text-input {
+    padding: .5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
 .back_link {
     padding-top: .5em;
     cursor: pointer;
@@ -152,20 +171,6 @@ button:hover {
 }
 
 /* ----- RANDOM QUOTE ----- */
-.quote-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-    padding: 1.5em;
-    box-sizing: border-box;
-    border: 1px solid #222222;
-}
-.quote-container__headline {
-    text-transform: uppercase;
-    margin-bottom: 1em;
-}
 .quote-detail__quote {
     font-family: 'Bitter', serif;
     font-size: 1em;
@@ -178,6 +183,12 @@ button:hover {
     margin-bottom: 2em;
 }
 
+/* ----- PASS THE MESSAGE QUOTE ----- */
+.new-message-container {
+    margin-top: 1.5rem;
+    max-width: 100%;
+    align-self: flex-start;
+}
 
 /*----- DESKTOP STYLES ----- */
 @media only screen and (min-width: 600px) {
