@@ -9,14 +9,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="content-container">
-            <h1 class="container__headline">Type your message below</h1>
-            <form>
-                <input class="text-input" type="text" name="message" id="message" placeholder="Message" required>
-            </form>
+        <div class="message-container">
+            <h1 class="message-container__headline">Type your message below</h1>
+            <div class="form__group">
+                <input class="form__field" type="text" name="message" id="message" placeholder="Message" required>
+                <label class="form__label" for="message">Message</label>
+            </div>
             <button id="button">Make It So!</button>
-            <div class="new-message-container">
-                Your Message: <span class="new-message"></span>
+            <a class="back_link" href="/">Back</a>
+            <div>
+                <p class="new-message"></p>
             </div>
         </div>
     </div>

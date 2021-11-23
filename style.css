@@ -1,5 +1,7 @@
 
 /* RESETS AND DEFAULT STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200;300;400;500;600;700&display=swap');
+
 body {
 	line-height: 1;
     font-family: 'Open Sans', sans-serif;
@@ -100,6 +102,9 @@ header {
 .quote_bg {
     background-image: url("_assets/images/quote_bg.jpg");
 }
+.pass_message {
+    background-image: url("_assets/images/pass_message.jpg");
+}
 button {
     padding: 1em 2em;
     border: 1px solid #222222;
@@ -173,6 +178,7 @@ button:hover {
 /* ----- RANDOM QUOTE ----- */
 .quote-detail__quote {
     font-family: 'Bitter', serif;
+    font-weight: 200;
     font-size: 1em;
     margin-bottom: .75em;
 }
@@ -183,14 +189,81 @@ button:hover {
     margin-bottom: 2em;
 }
 
-/* ----- PASS THE MESSAGE QUOTE ----- */
-.new-message-container {
-    margin-top: 1.5rem;
-    max-width: 100%;
-    align-self: flex-start;
+/* ----- PASS THE MESSAGE STYLE ----- */
+.message-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    padding: 1.5em;
+    box-sizing: border-box;
+    border: 1px solid #222222;
+}
+.message-container__headline {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.new-message {
+    font-family: 'Bitter', serif;
+    font-weight: 200;
+    font-size: 1.25em;
+    margin-top: 2em;
+}
+.form__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #222222;
+    outline: 0;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field::placeholder {
+    color: transparent;
 }
 
-/*----- DESKTOP STYLES ----- */
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+}
+.form__field:focus {
+    padding-bottom: 6px;  
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #000000,#c5c5c5);
+    border-image-slice: 1;
+  }
+  .form__field:focus + .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #222222;
+    font-weight:700;    
+  }
+
+  /* reset input */
+  .form__field{
+     box-shadow:none;
+  }
+
+/* ----- DESKTOP STYLES ----- */
 @media only screen and (min-width: 600px) {
     .box-container {
         width: 100%;
