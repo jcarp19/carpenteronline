@@ -9,7 +9,7 @@ body {
     padding: 0;
     margin: 0;
 }
-h1, h2, p {
+h1, h2, p, img {
     padding: 0;
     margin: 0;
 }
@@ -276,7 +276,67 @@ button:hover {
     margin-top: 1.5em;
     margin-bottom: .5em;
 }
-
+/* ----- IMAGE CAROUSEL ----- */
+.slider-container {
+    display: flex;
+}
+#carousel {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#carousel > img {
+    max-width: 100%;
+}
+.slides {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 15px;
+    color: #222222;
+    font-weight: 700;
+    font-size: 1.25em;
+    transition: .5s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, .8);
+}
+.dot-nav {
+    text-align: center;
+}
+.dot {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #bbbbbb;
+    box-sizing: border-box;
+    transition: background-color .6s ease;
+}
+.active, dot:hover {
+    background-color: #717171;
+}
 
 
 /* ----- DESKTOP STYLES ----- */
